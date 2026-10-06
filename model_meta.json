@@ -1,0 +1,168 @@
+{
+ "winner": "XGBoost",
+ "results": {
+  "Linear Regression": {
+   "MAE": 7883971.447521059,
+   "RMSE": 27101762.105600715,
+   "R2": 0.053702916660081534,
+   "R2_log": 0.7916064690543599,
+   "MdAPE": 30.478255450863223,
+   "params": {},
+   "fit_seconds": 0.0
+  },
+  "Decision Tree": {
+   "MAE": 7059716.008632665,
+   "RMSE": 20883260.96201791,
+   "R2": 0.4381387577918442,
+   "R2_log": 0.8195888640614495,
+   "MdAPE": 29.593392182798407,
+   "params": {
+    "max_depth": null,
+    "min_samples_leaf": 5
+   },
+   "fit_seconds": 3.0
+  },
+  "Random Forest": {
+   "MAE": 7023363.168857183,
+   "RMSE": 20886881.547974613,
+   "R2": 0.43794391817652145,
+   "R2_log": 0.8223625012387334,
+   "MdAPE": 29.175432942274508,
+   "params": {
+    "max_depth": 20,
+    "min_samples_leaf": 2
+   },
+   "fit_seconds": 120.8
+  },
+  "XGBoost": {
+   "MAE": 6998453.92214785,
+   "RMSE": 20888872.11949153,
+   "R2": 0.4378367823996816,
+   "R2_log": 0.822255056704963,
+   "MdAPE": 28.736485714285763,
+   "params": {
+    "learning_rate": 0.05,
+    "max_depth": 6
+   },
+   "fit_seconds": 5.6
+  }
+ },
+ "areas": [
+  "Abule Egba",
+  "Ajah",
+  "Alimosho",
+  "Amuwo Odofin",
+  "Bariga",
+  "Gbagada",
+  "Ibeju Lekki",
+  "Ikeja",
+  "Ikorodu",
+  "Ikotun Igando",
+  "Ikoyi",
+  "Ipaja",
+  "Isolo",
+  "Ketu",
+  "Kosofe Ikosi",
+  "Lekki",
+  "Maryland",
+  "Mushin",
+  "Ogba",
+  "Ogudu",
+  "Ojodu",
+  "Okota",
+  "Other Areas",
+  "Sangotedo",
+  "Shomolu",
+  "Surulere",
+  "Victoria Island",
+  "Yaba"
+ ],
+ "types": [
+  "Flat / Apartment",
+  "House / Duplex",
+  "Mini Flat / Self Contain"
+ ],
+ "importance_grouped": {
+  "Area (location)": 0.8689717054367065,
+  "Bedrooms": 0.08940528333187103,
+  "Property type": 0.018028628081083298,
+  "Bathrooms": 0.01218921784311533,
+  "Furnished": 0.0073515791445970535,
+  "Serviced": 0.002385687315836549,
+  "Newly built": 0.0016679030377417803
+ },
+ "area_medians": {
+  "Abule Egba": 2500000.0,
+  "Ajah": 3000000.0,
+  "Alimosho": 2500000.0,
+  "Amuwo Odofin": 4000000.0,
+  "Bariga": 1200000.0,
+  "Gbagada": 5000000.0,
+  "Ibeju Lekki": 2500000.0,
+  "Ikeja": 15000000.0,
+  "Ikorodu": 1200000.0,
+  "Ikotun Igando": 1300000.0,
+  "Ikoyi": 45000000.0,
+  "Ipaja": 1800000.0,
+  "Isolo": 2500000.0,
+  "Ketu": 2100000.0,
+  "Kosofe Ikosi": 3500000.0,
+  "Lekki": 11000000.0,
+  "Maryland": 8000000.0,
+  "Mushin": 1500000.0,
+  "Ogba": 3000000.0,
+  "Ogudu": 3750000.0,
+  "Ojodu": 6000000.0,
+  "Okota": 3500000.0,
+  "Other Areas": 2800000.0,
+  "Sangotedo": 4500000.0,
+  "Shomolu": 2000000.0,
+  "Surulere": 3500000.0,
+  "Victoria Island": 30000000.0,
+  "Yaba": 3000000.0
+ },
+ "trained_on_rows": 10306,
+ "tested_on_rows": 2577,
+ "examples": [
+  {
+   "Area": "Yaba",
+   "Type": "Flat / Apartment",
+   "Bedrooms": 2,
+   "Bathrooms": 2,
+   "Serviced": 0,
+   "NewlyBuilt": 0,
+   "Furnished": 0,
+   "PredictedRent": 4160000.0
+  },
+  {
+   "Area": "Lekki",
+   "Type": "House / Duplex",
+   "Bedrooms": 4,
+   "Bathrooms": 4,
+   "Serviced": 0,
+   "NewlyBuilt": 1,
+   "Furnished": 0,
+   "PredictedRent": 17030000.0
+  },
+  {
+   "Area": "Ikeja",
+   "Type": "Flat / Apartment",
+   "Bedrooms": 3,
+   "Bathrooms": 3,
+   "Serviced": 1,
+   "NewlyBuilt": 0,
+   "Furnished": 0,
+   "PredictedRent": 18820000.0
+  },
+  {
+   "Area": "Ikoyi",
+   "Type": "Flat / Apartment",
+   "Bedrooms": 3,
+   "Bathrooms": 3,
+   "Serviced": 1,
+   "NewlyBuilt": 0,
+   "Furnished": 1,
+   "PredictedRent": 37430000.0
+  }
+ ]
+}
