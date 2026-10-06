@@ -1,4 +1,4 @@
-# Lagos Rent Estimator
+# Lagos Rent Guide
 
 A machine learning web app that estimates the fair annual rent of a residential
 property in Lagos, Nigeria from its area, bedrooms, bathrooms and type, and can
