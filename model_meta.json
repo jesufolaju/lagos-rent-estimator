@@ -1,0 +1,199 @@
+{
+ "winner": "XGBoost (with monotonic constraints)",
+ "results": {
+  "Linear Regression": {
+   "MAE": 6361416.5829910375,
+   "RMSE": 16878540.266217668,
+   "R2": 0.3261493337069725,
+   "R2_log": 0.815730775688848,
+   "MdAPE": 31.70413374182697
+  },
+  "Decision Tree": {
+   "MAE": 5614032.746032959,
+   "RMSE": 10585909.271007987,
+   "R2": 0.7349363165916647,
+   "R2_log": 0.8485558534163331,
+   "MdAPE": 29.746155433222
+  },
+  "Random Forest": {
+   "MAE": 5594548.301414749,
+   "RMSE": 10598315.45234622,
+   "R2": 0.7343146685161228,
+   "R2_log": 0.8497909555394187,
+   "MdAPE": 29.632698840526327
+  },
+  "XGBoost": {
+   "MAE": 5563318.085616101,
+   "RMSE": 10508903.299922876,
+   "R2": 0.7387786404436449,
+   "R2_log": 0.8516866894585453,
+   "MdAPE": 28.973164814814844
+  },
+  "XGBoost (deployed, monotonic)": {
+   "MAE": 5645424.695831685,
+   "RMSE": 10469278.682820963,
+   "R2": 0.7407448365014025,
+   "R2_log": 0.8490730350525987,
+   "MdAPE": 29.964602403846097
+  }
+ },
+ "best_xgb_params": {
+  "learning_rate": 0.05,
+  "max_depth": 6
+ },
+ "areas": [
+  "Abule Egba",
+  "Ajah",
+  "Alimosho",
+  "Amuwo Odofin",
+  "Bariga",
+  "Gbagada",
+  "Ibeju Lekki",
+  "Ikeja",
+  "Ikorodu",
+  "Ikoyi",
+  "Ipaja",
+  "Isolo",
+  "Ketu",
+  "Kosofe Ikosi",
+  "Lekki",
+  "Maryland",
+  "Mushin",
+  "Ogba",
+  "Ogudu",
+  "Ojodu",
+  "Okota",
+  "Other Areas",
+  "Sangotedo",
+  "Shomolu",
+  "Surulere",
+  "Victoria Island",
+  "Yaba"
+ ],
+ "types": [
+  "Flat / Apartment",
+  "House / Duplex",
+  "Mini Flat / Self Contain"
+ ],
+ "importance_grouped": {
+  "Area (location)": 0.8034861087799072,
+  "Bedrooms": 0.12873399257659912,
+  "Bathrooms": 0.04582458734512329,
+  "Property type": 0.014585821889340878,
+  "Furnished": 0.004677546676248312,
+  "Serviced": 0.0019370692316442728,
+  "Newly built": 0.0007549867732450366
+ },
+ "area_medians": {
+  "Abule Egba": 2500000.0,
+  "Ajah": 3000000.0,
+  "Alimosho": 2500000.0,
+  "Amuwo Odofin": 4000000.0,
+  "Bariga": 1200000.0,
+  "Gbagada": 5000000.0,
+  "Ibeju Lekki": 2250000.0,
+  "Ikeja": 15000000.0,
+  "Ikorodu": 1300000.0,
+  "Ikoyi": 45000000.0,
+  "Ipaja": 1800000.0,
+  "Isolo": 2500000.0,
+  "Ketu": 2200000.0,
+  "Kosofe Ikosi": 3500000.0,
+  "Lekki": 10000000.0,
+  "Maryland": 8000000.0,
+  "Mushin": 1500000.0,
+  "Ogba": 3000000.0,
+  "Ogudu": 3500000.0,
+  "Ojodu": 6000000.0,
+  "Okota": 3500000.0,
+  "Other Areas": 2500000.0,
+  "Sangotedo": 4500000.0,
+  "Shomolu": 2000000.0,
+  "Surulere": 3500000.0,
+  "Victoria Island": 30000000.0,
+  "Yaba": 3000000.0
+ },
+ "trained_on_rows": 10108,
+ "tested_on_rows": 2528,
+ "total_rows": 12636,
+ "median_rent": 9000000.0,
+ "median_by_beds": {
+  "1": 2275000.0,
+  "2": 6500000.0,
+  "3": 15000000.0,
+  "4": 16000000.0,
+  "5": 30000000.0,
+  "6": 57500000.0,
+  "7": 50000000.0,
+  "8": 87500000.0,
+  "9": 60000000.0,
+  "10": 90000000.0
+ },
+ "median_by_type": {
+  "Flat / Apartment": 7000000.0,
+  "House / Duplex": 15000000.0,
+  "Mini Flat / Self Contain": 2200000.0
+ },
+ "examples": [
+  {
+   "Area": "Yaba",
+   "Type": "Flat / Apartment",
+   "Bedrooms": 2,
+   "Bathrooms": 2,
+   "Serviced": 0,
+   "NewlyBuilt": 0,
+   "Furnished": 0,
+   "PredictedRent": 3930000.0
+  },
+  {
+   "Area": "Lekki",
+   "Type": "House / Duplex",
+   "Bedrooms": 4,
+   "Bathrooms": 4,
+   "Serviced": 0,
+   "NewlyBuilt": 1,
+   "Furnished": 0,
+   "PredictedRent": 14850000.0
+  },
+  {
+   "Area": "Ikeja",
+   "Type": "Flat / Apartment",
+   "Bedrooms": 3,
+   "Bathrooms": 3,
+   "Serviced": 1,
+   "NewlyBuilt": 0,
+   "Furnished": 0,
+   "PredictedRent": 22770000.0
+  },
+  {
+   "Area": "Ikoyi",
+   "Type": "Flat / Apartment",
+   "Bedrooms": 3,
+   "Bathrooms": 3,
+   "Serviced": 1,
+   "NewlyBuilt": 0,
+   "Furnished": 1,
+   "PredictedRent": 47320000.0
+  },
+  {
+   "Area": "Maryland",
+   "Type": "Flat / Apartment",
+   "Bedrooms": 2,
+   "Bathrooms": 2,
+   "Serviced": 0,
+   "NewlyBuilt": 0,
+   "Furnished": 0,
+   "PredictedRent": 4820000.0
+  },
+  {
+   "Area": "Maryland",
+   "Type": "Flat / Apartment",
+   "Bedrooms": 3,
+   "Bathrooms": 3,
+   "Serviced": 0,
+   "NewlyBuilt": 0,
+   "Furnished": 0,
+   "PredictedRent": 8860000.0
+  }
+ ]
+}

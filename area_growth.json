@@ -1,0 +1,14 @@
+{
+ "basis": "Median asking rents, PropertyPro Lagos rent-only snapshots 2022 and 2026",
+ "overall_yearly_rate": 0.4565,
+ "area_yearly_rates": {
+  "Lekki": 0.3194,
+  "Ikoyi": 0.4222,
+  "Ajah": 0.2851,
+  "Ikeja": 0.6159,
+  "Yaba": 0.3512,
+  "Gbagada": 0.4287,
+  "Ojodu": 0.5651,
+  "Surulere": 0.4043
+ }
+}
